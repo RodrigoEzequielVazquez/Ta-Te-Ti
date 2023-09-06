@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+body header {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorPrincipal {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#juego{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+}
+
+#juego div{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid rgb(72, 200, 187);
+}
+
+#juego .ganadorO {
+    background-color: rgb(251, 151, 151);
+}
+
+#juego .ganadorX {
+    background-color: aquamarine;
+}
+
+#juego div span {
+    margin: 0;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#juego div .O {
+    color: red;
+}
+
+#juego div .X {
+    color: green;
+}
+
+#juego #bloque1 {
+    border-top: 0;
+    border-left: 0;
+}
+
+#juego #bloque2 {
+    border-top: 0;
+}
+
+#juego #bloque3 {
+    border-top: 0;
+    border-right: 0;
+}
+
+#juego #bloque4 {
+    border-left: 0;
+}
+
+#juego #bloque6 {
+    border-right: 0;
+}
+
+#juego #bloque7 {
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#juego #bloque8 {
+    border-bottom: 0;
+}
+
+#juego #bloque9 {
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.contenedorFin div {
+    display: flex;
+    justify-content: center;
+}
+
+#ganador {
+    padding: 0.5rem;
+    border: 1px solid gold;
+}
+
+#jugarDeNuevo {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: gold;
+}
+
+#ocultar {
+    display: none;
+}
